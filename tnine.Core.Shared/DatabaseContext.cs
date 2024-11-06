@@ -17,6 +17,8 @@ namespace tnine.Core.Shared
         public DbSet<ApplicationUserClaim> UserClaims { get; set; }
         public DbSet<ApplicationUserRole> UserRoles { get; set; }
 
+        public DbSet<Category> Categories { get; set; }
+
         public static DatabaseContext Create()
         {
             return new DatabaseContext();

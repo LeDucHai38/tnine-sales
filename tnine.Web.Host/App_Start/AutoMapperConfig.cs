@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using tnine.Application.Shared.ICategoryService.Dto;
 using tnine.Application.Shared.ITodoService.Dto;
 using tnine.Core;
 
@@ -9,8 +10,10 @@ namespace tnine.Web.Host.App_Start
         public AutoMapperProfile()
         {
             CreateMap<Todo, CreateOrEditTodoDto>().ReverseMap();
+            CreateMap<Category, CreateOrEditCategoryDto>().ReverseMap();
         }
     }
+
 
     public static class AutoMapperConfig
     {
