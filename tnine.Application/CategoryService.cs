@@ -38,8 +38,8 @@ namespace tnine.Application
             return categories.Select(p => new GetCategoryForViewDto
             {
                 Id = (int)p.Id,
-                CategoryName = p.CategoryName,
-                CategoryDescription = p.CategoryDescription
+                Name = p.Name,
+                Description = p.Description
             }).ToList();
 
         }
