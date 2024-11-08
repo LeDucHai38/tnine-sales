@@ -9,10 +9,10 @@ namespace tnine.Application.Shared.ICategoryService.Dto
 {
     public class GetCategoryForViewDto : PagedAndSortedResultRequestDto
     {
-        public string CategoryDescription;
-        public int Id;
+        public string Description;
+        public long Id;
 
         public string FilterText { get; set; }
-        public string CategoryName { get; set; }
+        public string Name { get; set; }
     }
 }
